@@ -23,11 +23,75 @@
 
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css" />
+    <link rel="stylesheet" href="/assets/css/pokedex.css" />
     <link rel="stylesheet" href="./assets/css/pokemon.css" />
   </head>
 
   <body>
-    <section class="content"></section>
+    <section class="content">
+      <h1>Pokemon - Detalhe</h1>
+      <div class="pokemon grass">
+        <span class="number">#001</span>
+        <span class="name">Bulbasaur</span>
+
+        <div class="detail">
+          <ol class="types">
+            <li class="type grass">grass</li>
+            <li class="type poison">poison</li>
+          </ol>
+
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+            alt="Bulbasaur" />
+        </div>
+        <div class="about">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">About</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Species</td>
+                <td>Seed</td>
+              </tr>
+              <tr>
+                <td>Height</td>
+                <td>2'3.6" (0.70 cm)</td>
+              </tr>
+              <tr>
+                <td>Weight</td>
+                <td>15.2 lbs (6.9 kg)</td>
+              </tr>
+              <tr>
+                <td>Abilities</td>
+                <td>Overgrow, Chlorophyl</td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th colspan="2">Breeding</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Gender</td>
+                <td>&#9794 87,5% &#9792 12,5%</td>
+              </tr>
+              <tr>
+                <td>Egg Groups</td>
+                <td>Monster</td>
+              </tr>
+              <tr>
+                <td>Egg Cycle</td>
+                <td>Grass</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
 
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
