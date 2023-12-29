@@ -24,11 +24,15 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css" />
     <link rel="stylesheet" href="/assets/css/pokedex.css" />
+    <link rel="stylesheet" href="./assets/css/modal.css" />
   </head>
 
   <body>
     <section class="content">
-      <h1>Pokedex</h1>
+      <header class="header">
+        <img src="./assets/imgs/pokedex_favicon.png" alt="Imagem pokedex" />
+        <h1>Pokedex</h1>
+      </header>
 
       <ol id="pokemonList" class="pokemons">
         <!-- ..... Pokemons here ..... -->
@@ -37,11 +41,99 @@
       <div class="pagination">
         <button id="loadMoreButton" type="button">Load More</button>
       </div>
+
+      <!-- Modal -->
+      <dialog class="modal__container" id="modalPokemon">
+        <div class="modal__header">
+          <button class="modal__button--close" id="botaoFecharModal">X</button>
+        </div>
+
+        <div class="modal__indentificacao">
+          <span class="pokemon__nome" id="nomeDoPokemon"></span>
+          <span class="pokemon__numero" id="numeroDoPokemon"></span>
+          <ol class="types" id="tiposDoPokemon"></ol>
+        </div>
+
+        <img
+          class="pokemon__stats--imagem"
+          src=""
+          alt="imagem do pokemon"
+          id="imagemDoPokemon" />
+
+        <div class="pokemon__stats">
+          <ul class="stats__headers">
+            <li>
+              <span class="stats__item--titulo item__ativo">About</span>
+            </li>
+            <li>
+              <span class="stats__item--titulo">Base Stats</span>
+            </li>
+            <li>
+              <span class="stats__item--titulo">Evolution</span>
+            </li>
+          </ul>
+
+          <ul class="description__lista">
+            <div class="description__aba item__ativo">
+              <ol>
+                <li>
+                  <label>Species</label>
+                  <span id="especieDoPokemon"></span>
+                </li>
+                <li>
+                  <label>Height</label>
+                  <span id="alturaDoPokemon"></span>
+                </li>
+                <li>
+                  <label>Weight</label>
+                  <span id="pesoDoPokemon"></span>
+                </li>
+                <li>
+                  <label>Abilities</label>
+                  <span id="habilidadesDoPokemon"></span>
+                </li>
+              </ol>
+            </div>
+
+            <div class="description__aba">
+              <ol>
+                <li>
+                  <label>HP</label>
+                  <div id="vidaDoPokemon"></div>
+                </li>
+                <li>
+                  <label>Attack</label>
+                  <div id="ataqueDoPokemon"></div>
+                </li>
+                <li>
+                  <label>Defense</label>
+                  <div id="defesaDoPokemon"></div>
+                </li>
+                <li>
+                  <label>Sp. Atk</label>
+                  <div id="spatkDoPokemon"></div>
+                </li>
+                <li>
+                  <label>Sp. Def</label>
+                  <div id="spdefDoPokemon"></div>
+                </li>
+                <li>
+                  <label>Speed</label>
+                  <div id="velDoPokemon"></div>
+                </li>
+              </ol>
+            </div>
+
+            <div class="description__aba" id="evoChain"></div>
+          </ul>
+        </div>
+      </dialog>
     </section>
 
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="./assets/js/pokemon-modal.js"></script>
   </body>
 </html>

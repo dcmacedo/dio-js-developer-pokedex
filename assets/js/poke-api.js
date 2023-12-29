@@ -1,6 +1,7 @@
-
+// Criação do Objeto que vai armazenar as informações consumidas da API
 const pokeApi = {}
 
+// Função que cria uma instancia de um novo pokemon
 function convertPokeApiDetailToPokemon(pokeDetail) {
     const pokemon = new Pokemon()
     pokemon.number = pokeDetail.id
@@ -17,12 +18,14 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     return pokemon
 }
 
+// Método para buscar os detalhes de cada pokemon
 pokeApi.getPokemonDetail = (pokemon) => {
     return fetch(pokemon.url)
         .then((response) => response.json())
         .then(convertPokeApiDetailToPokemon)
 }
 
+// Método para consumir API buscando os dados dos pokemons
 pokeApi.getPokemons = (offset = 0, limit = 5) => {
     const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
 

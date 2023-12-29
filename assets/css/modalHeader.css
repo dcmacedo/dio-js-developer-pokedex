@@ -1,0 +1,14 @@
+.modal__header {
+  display: flex;
+  justify-content: end;
+}
+
+.modal__button--close {
+  background: none;
+  border: none;
+  color: white;
+  height: 48px;
+  width: 48px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

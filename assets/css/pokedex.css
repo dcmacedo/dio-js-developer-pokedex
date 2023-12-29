@@ -84,10 +84,7 @@
   margin: 0.5rem;
   padding: 1rem;
   border-radius: 1rem;
-}
-
-.pokemon a {
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .pokemon .number {

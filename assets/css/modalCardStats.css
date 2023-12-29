@@ -1,0 +1,72 @@
+.pokemon__stats {
+  background: white;
+  border-radius: 2rem 2rem 0 0;
+  bottom: 0;
+  left: 0;
+  height: 60vh;
+  position: absolute;
+  width: 100%;
+}
+
+.pokemon__stats ol {
+  list-style: none;
+  padding: 0;
+}
+
+.pokemon__stats--imagem {
+  width: 220px;
+  height: 190px;
+  position: relative;
+  top: -47%;
+  right: 23%;
+  z-index: 1;
+  justify-self: flex-end;
+}
+
+.stats__headers {
+  margin: 0;
+  list-style-type: none;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stats__headers li {
+  cursor: pointer;
+  z-index: 2;
+}
+
+.stats__item--titulo {
+  color: lightseagreen;
+  padding: 1rem 0;
+  display: block;
+  min-width: 80px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.stats__item--titulo.item__ativo {
+  color: black;
+  border-bottom: 4px solid purple;
+}
+
+@media screen and (max-width: 992px) {
+  .pokemon__stats--imagem {
+    width: 200px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .pokemon__stats--imagem {
+    width: 180px;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .pokemon__stats--imagem {
+    width: 130px;
+    height: 120px;
+  }
+}

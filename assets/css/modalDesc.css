@@ -1,0 +1,37 @@
+.description__lista {
+  margin: 0;
+  list-style: none;
+  padding: 1rem;
+}
+
+.description__lista li {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.description__lista li label {
+  color: lightseagreen;
+}
+
+.description__lista li div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description__aba {
+  display: none;
+}
+
+.description__aba.item__ativo {
+  display: block;
+}
+
+.description__aba p {
+  color: lightseagreen;
+}
+
+#especieDoPokemon::first-letter {
+  text-transform: capitalize;
+}

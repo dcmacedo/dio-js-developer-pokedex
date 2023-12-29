@@ -1,0 +1,34 @@
+.modal__indentificacao {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.pokemon__nome {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.pokemon__nome::first-letter {
+  text-transform: capitalize;
+}
+
+.pokemon__numero {
+  text-align: end;
+}
+
+.types {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.types .type {
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0;
+  font-size: 0.825rem;
+  border-radius: 1rem;
+  filter: brightness(1.1);
+  text-align: center;
+}
